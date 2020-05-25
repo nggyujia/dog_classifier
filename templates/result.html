@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dog Image Classifier</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+<body style = "background-color: white">
+
+    <div style="position:absolute; margin:auto; width:700px; height:700px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+        <img src="{{ url_for('display_image', filename=filename) }}">
+        <br>
+        <p>{{ result }}</p>
+        <br>
+        <img src="/cat_images/cat22.png">
+        <br>
+        <a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
+    </div>
